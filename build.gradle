@@ -1,7 +1,7 @@
 plugins {
     id "java"
     id "idea"
-    id "io.quarkus" version "$quarkusVersion"
+    id "io.quarkus"
 }
 
 group "com.repro"
@@ -9,6 +9,9 @@ group "com.repro"
 repositories {
     mavenLocal()
     mavenCentral()
+    maven {
+        url "https://s01.oss.sonatype.org/content/repositories/snapshots"
+    }
 }
 
 dependencies {
